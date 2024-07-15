@@ -1,0 +1,291 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #050404;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+
+.menu__header{
+    padding-left:40px;
+    display:flex; 
+   
+}
+.menu__list{
+    display:flex; /*alinea en una sola fila*/
+    padding-left:400px;
+    gap: 15px; /*deja espacios entre lineas*/
+}
+
+
+
+/*Sección Title*/
+
+
+.title__div{
+    padding-left:40px;
+    display:flex; 
+
+
+}
+
+
+.title__network{
+    
+    display:flex; /*alinea en una sola fila*/
+    padding-left:10px;
+    gap: 35px; /*deja espacios entre lineas*/
+}
+
+
+/*Sección About*/
+
+.about{
+    padding-left: 40px;
+    width: 750px;
+    padding-left:40px;
+
+
+}
+
+/*Sección skills */
+
+section.skills{
+    text-align: center;
+   
+}
+
+.skills__line{
+    display: flex;
+    justify-content: space-around;
+    padding-left:40px;
+    
+}
+
+.skills__box{
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /** tamaño de la caja*/
+    border: 2px solid #ffffff;
+    border-radius: 1px;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    text-align: center;
+    
+}
+.hobbies__line{
+    display: flex;
+    padding-left:40px;
+    justify-content: space-around;
+    
+}
+
+.hobbies__box{
+    
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /** tamaño de la caja*/
+    border: 2px solid #ffffff;
+    border-radius: 1px;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+    text-align: center;
+    
+}
+.academic__courses{
+    display: flex;
+    padding-left:40px;
+    justify-content: space-around;
+}
+
+.academic__courses__list{
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /** tamaño de la caja*/
+    border: 2px solid #ffffff;
+    border-radius: 1px;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+
+/* experiencia*/
+
+.experience__section__title{
+    text-align: center;
+}
+
+.experiencie__box{
+    display: flex;
+    padding-left:40px;
+}
+
+.experience__info{
+    display:flow-root;
+    align-items: center
+}
+
+.experiencia__botao--repo{
+    background-color: white;
+    border-color:#335ff3 ;
+    color: #335ff3;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.experience__botao--demo{
+    background-color: #335ff3;
+    border-color: #335ff3;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+       
+
+    
+/*Contacto*/
+
+.formcontato__contacto{
+    display:flex;
+    padding-left:40px;
+    
+} 
+
+.formcontato__input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formcontato__textarea{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formcontato__botao{
+    width: 50%;
+    background-color: #335ff3;
+    color: white;
+    padding: 14px 20px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*footeer*/
+
+section.footer{
+    text-align: center;
+}
+
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
